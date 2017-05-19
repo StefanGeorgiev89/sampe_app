@@ -27,5 +27,5 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     get static_pages_book_url
     assert_response :success
   end
-##
+
 end
