@@ -40,7 +40,12 @@ GEM
       tzinfo (~> 1.1)
     ansi (1.5.0)
     arel (7.1.4)
+    autoprefixer-rails (7.1.1)
+      execjs
     bindex (0.5.0)
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.3)
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
@@ -160,6 +165,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  bootstrap-sass (~> 3.3.7)
   byebug
   coffee-rails (~> 4.2)
   coffee-script-source (= 1.8.0)
@@ -169,7 +175,7 @@ DEPENDENCIES
   minitest-reporters
   puma (~> 3.0)
   rails (~> 5.0.1)
-  sass-rails (~> 5.0)
+  sass-rails (~> 5.0.6)
   simplecov
   simplecov-csv
   sqlite3
