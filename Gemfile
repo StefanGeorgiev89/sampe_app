@@ -45,6 +45,7 @@ group :development, :test do
   gem "simplecov"
   gem "simplecov-csv"
   gem "minitest-reporters"
+  gem 'rails-controller-testing'
   # gem 'guard'
   # gem 'guard-minitest'
   # gem '<guard-plugin-name>'
