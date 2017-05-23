@@ -6,17 +6,23 @@ class UserTest < ActiveSupport::TestCase
     @user = User.new(name: "Example User", email: "user@example.com")
   end
 
-  test "should be valid" do
-    assert @user.valid?
-  end
+  # test "should be valid" do
+  #   assert @user.valid?
+  # end
 
-  test "name should be present" do
-    @user.name = ""
-    assert_not @user.valid?
-  end
+  # test "name should be present" do
+  #   @user.name = "a" * 51
+  #   assert_not @user.valid?
 
-  test "email should be present" do
-    @user.email = "     "
-    assert_not @user.valid?
+
+
+  #end
+  # test "email should be present" do
+  #   @user.email = "a" * 244 + "@example.com"
+  #   assert_not @user.valid?
+    test "email addresses should be unique" do
+    duplicate_user = @user.dup
+    @user.save
+    assert_not duplicate_user.valid?
   end
 end
