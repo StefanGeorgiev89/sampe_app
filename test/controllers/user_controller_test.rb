@@ -1,9 +1,9 @@
-require 'test_helper'
+# require 'test_helper'
 
-class UserControllerTest < ActionDispatch::IntegrationTest
-  test "should get show" do
-    get user_show_url
-    assert_response :success
-  end
+# class UserControllerTest < ActionDispatch::IntegrationTest
+#    test "should get show" do
+#      get user_show_url
+#      assert_response :success
+#    end
 
-end
+# end
