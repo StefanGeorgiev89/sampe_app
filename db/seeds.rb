@@ -1,5 +1,5 @@
-User.create!(name:  "admina",
-             email: "admina@admi.bg",
+User.create!(name:  "admin",
+             email: "admi@admi.bg",
              password:              "foobar",
              password_confirmation: "foobar",
              admin: true,
@@ -11,9 +11,9 @@ User.create!(name:  "admina",
   email = "example-#{n+1}@railstutorial.org"
   password = "password"
   User.create!(name:  name,
-               email: email,
-               password:              password,
-               password_confirmation: password,
-               activated: true,
-               activated_at: Time.zone.now)
+              email: email,
+              password:              password,
+              password_confirmation: password,
+              activated: true,
+              activated_at: Time.zone.now)
 end
